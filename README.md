@@ -20,7 +20,7 @@ This project sets up an automated backup system using an EC2 instance and S3. A 
 
 1. Launch an EC2 instance (Amazon Linux 2 or Ubuntu).
 2. Attach an IAM role with the permissions in `iam-role-policy.json`.
-3. Create an S3 bucket and enable versioning (optional).
+3. Create an S3 bucket and enable versioning.
 4. Copy `backup-to-s3.sh` to your instance and make it executable:
    ```bash
    chmod +x backup-to-s3.sh
