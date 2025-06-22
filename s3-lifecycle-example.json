@@ -1,0 +1,18 @@
+{
+  "Rules": [
+    {
+      "ID": "ArchiveAndExpireBackups",
+      "Prefix": "backups/",
+      "Status": "Enabled",
+      "Transitions": [
+        {
+          "Days": 30,
+          "StorageClass": "GLACIER"
+        }
+      ],
+      "Expiration": {
+        "Days": 90
+      }
+    }
+  ]
+}
